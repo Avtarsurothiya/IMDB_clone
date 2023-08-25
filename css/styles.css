@@ -1,24 +1,26 @@
+/* Basic Body CSS */
+
 body {
-  /* background-color: #d0f7df; */
-  background-color: #0c1027;
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Ubuntu', sans-serif; */
-  font-family: 'Fuzzy Bubbles', cursive;
+  font-family: 'Georgia', sans-serif;
+  
 }
 
-/* // bootstrap css modified */
+/* Bootstrap css */
 .mt-n1 {
   margin-top: -0.25rem !important;
 }
 
-/* bootstrap modified till above */
+/* Navbar Background */
 :root {
-  --bg-purple: #0c1027;
+  --bg-purple: #02084e;
+
 }
 
 .background-purple {
-  background-color: var(--bg-purple);
-  /* color: white; */
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #de15cd 52%, #4a0ade 90%);
 }
 
 header {}
@@ -28,10 +30,7 @@ header {}
   align-items: flex-end;
 }
 
-/* search-bar button:hover{
-color: green;
-background-color: red;
-} */
+
 .profile-container {
   object-fit: contain;
   height: 100%;
