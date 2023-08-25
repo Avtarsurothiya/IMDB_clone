@@ -118,4 +118,15 @@ background-color: red;
     height: 5rem;
     width: 5rem;
   }
-  
+  ol li{
+    padding: 2;
+    margin: 2;
+    display: flex;
+    }
+    ol li button{
+    padding-top: 2;
+    margin-top: 2rem;
+    justify-content: end;
+    height: auto;
+      line-height: 1.2;
+    }
