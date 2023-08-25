@@ -43,3 +43,9 @@ background-color: red;
     width: 2rem;
     border-radius: 50%
   }
+
+  /* Adding Aside Functionality */
+.queue-list li {
+    margin: 1%;
+    padding: 5%;
+  }
