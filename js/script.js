@@ -107,5 +107,45 @@ function favourite(element) {
       }
     }
   }
+
+  function addincurfav() {
+    const actionForButton = "remove";
+    const favouriteMovies = JSON.parse(localStorage.getItem("favouriteMovies"));
+  
+    if (favouriteMovies !== null) {
+      const ol = document.querySelector(".offcanvas-body > ol");
+      ol.innerHTML = ""
+      favouriteMovies.forEach((movie) => {
+        const li = document.createElement("li");
+        li.innerHTML = `
+            <img src="${'https://image.tmdb.org/t/p/w500' + movie.poster_path}" alt="${movie.title}">
+      <button id="${movie.id}" onclick="getMovieInDetail(this)" class="btn btn-primary"> ${movie.title} </button>
+      <button onclick="${actionForButton}(this)" class=" text-icon-button btn btn-danger" data-id="${movie.id}" >
+  
+          <span>${actionForButton}</span>
+      </button>
+          `;
+        ol.appendChild(li);
+      });
+    }
+  }
+
+  // remove movies from favourite section
+function remove(element) {
+    let id = element.dataset.id;
+    let favouriteMovies = JSON.parse(localStorage.getItem("favouriteMovies"));
+    let newFavouriteMovies = [];
+    for (let i = 0; i < favouriteMovies.length; i++) {
+      if (favouriteMovies[i].id == id) {
+        continue;
+      }
+      newFavouriteMovies.push(favouriteMovies[i]);
+    }
+  
+    localStorage.setItem("favouriteMovies", JSON.stringify(newFavouriteMovies));
+    currentMovieStack = newFavouriteMovies;
+    // renderList("remove");
+    addincurfav();
+  }
     
   
