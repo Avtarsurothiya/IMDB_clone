@@ -147,5 +147,41 @@ function remove(element) {
     // renderList("remove");
     addincurfav();
   }
+
+  // renders movie details on web-page
+function renderMovieInDetail(movie) {
+    console.log(movie);
+    movieCardContainer.innerHTML = '';
+  
+    const movieDetailCard = document.createElement('div');
+    movieDetailCard.classList.add('detail-movie-card');
+    movieDetailCard.style.textAlign = 'center';
+  
+    movieDetailCard.innerHTML = `
+  
+  <div class="contai" >
+  <div onclick=getTrandingMovies()>
+          <!-- <img src="${'https://image.tmdb.org/t/p/w500' + movie.backdrop_path}" class="detail-movie-background"> -->
+          <img src="${'https://image.tmdb.org/t/p/w500' + movie.poster_path}" class="detail-movie-poster">
+  </div>
+          <div class="detail-movie">
+              <span><h1>${movie.title}</h1></span>
+              <div class="rating">
+                  stars
+                  <span>${movie.vote_average}</span>
+              </div>
+          </div>
+  
+             <div class="plot">
+               <p>${movie.overview}</p>
+               <p>Release date : ${movie.release_date}</p>
+               <p>runtime : ${movie.runtime} minutes</p>
+               <p>tagline : ${movie.tagline}</p>
+              </div>
+          </div>
+      `;
+  
+    movieCardContainer.append(movieDetailCard);
+  }
     
   
