@@ -183,5 +183,15 @@ function renderMovieInDetail(movie) {
   
     movieCardContainer.append(movieDetailCard);
   }
+
+  // fetch the defails of of movie and send it to renderMovieDetails to display
+function getMovieInDetail(element) {
+
+    fetch(`https://api.themoviedb.org/3/movie/${element.getAttribute('id')}?api_key=cb213741fa9662c69add38c5a59c0110&language=en-US`)
+      .then((response) => response.json())
+      .then((data) => renderMovieInDetail(data))
+      .catch((err) => printError(err));
+  
+  }
     
   
