@@ -9,18 +9,20 @@ With this project, my  aim is to create a platform that seamlessly replicates th
 Home Page
 Search any movie from the API and display the search results on the frontend (as user keep on typing , search results will keep on updating).
 Each search result of the movie have a favourite button by which movie can be added to the favourites section.
-
 On every result, there will be 2 options: 1: Movie Details 2: Favourite 
+
+![image](https://github.com/Avtarsurothiya/IMDB_clone/assets/37234772/bb4eebf0-8a2c-4e92-8d7b-8c926cf1cda1)
 
 #Movie Page
 Clicking on Movie Details will open this page where more informatyion about the movie is available ;ole Movie Poster, Name, Movie Plot, Rating, Runtime and tagline (if available).
 
-#My favourite movies Page
+![image](https://github.com/Avtarsurothiya/IMDB_clone/assets/37234772/a2184245-53f5-48aa-b21e-9c2052219ac2)
 
+#My favourite movies Page
 This page is available on homepage as aside functionality. This will list down all the favourite movies as a list with movie details and and remove option.
 This list is persistant (will maintain the list of added favourite movies even on refreshing the browser.)
 
-
+![image](https://github.com/Avtarsurothiya/IMDB_clone/assets/37234772/f93cd0bd-aa56-4fa0-b059-bf6853a601b7)
 
 Development Stack Used:
 
@@ -34,7 +36,7 @@ VS code Editor
 W3 School
 programiz.com
 
-How To Use the Application:
+#How To Use the Application:
 Once you open the Application link, homepage appears where you can see trending movies on result space. Topwrite IMDB logo, Home, favourite buttons available on left side and Search box, Notification Icon and profile picture available on right side. 
 Profile picture further contains a drop-down menu of other options like settings about and log out.
 
@@ -46,4 +48,4 @@ Favourites section can be accessed using "Favourites" button anywhere on applica
 
 Application Link: https://avtarsurothiya.github.io/IMDB_clone/
 
-Thank you so much for Visiting the Application!
+Thank you so much for Visiting the Application! :)
