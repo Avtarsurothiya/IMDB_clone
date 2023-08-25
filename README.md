@@ -1,4 +1,5 @@
 Welcome to our IMDB Clone Project!
+
 Application Description:
 
 This IMDB movie clone is Made up of using OMDB API to inhance And utilize my skill and Knowledge of HTML, CSS, BOOtstrap And JavaScript.
@@ -33,7 +34,11 @@ CSS: Styling the HTML elements to provide Attractive user interface
 JavaScript: Used to provide functionality to the project
 
 VS code Editor
-W3 School
+
+W3Schools
+
+JavaScripts Documentation
+
 programiz.com
 
 #How To Use the Application:
